@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f5f7f6;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #2f5d50;
+    transition: 0.3s;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+nav h2 {
+    color: #2f5d50;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li {
+    cursor: pointer;
+}
+
+nav ul li a {
+    color: #080808;       
+    text-decoration: none; 
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #2f5d50;    
+    text-decoration: none;  
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.btn {
+    background: black;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #2f5d50; 
+    color: white;
+}
+
+.hero {
+    margin: 20px;
+    padding: 100px;
+    border-radius: 20px;
+    background: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.2)),
+                url('hero.png');
+    background-size: cover;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 40px;
+    max-width: 500px;
+}
+
+.hero p {
+    margin: 15px 0;
+}
+
+.about {
+    display: flex;
+    gap: 40px;
+    padding: 50px;
+    align-items: center;
+}
+
+.about img {
+    width: 250px;
+    border-radius: 20px;
+}
+
+.about-text h2 {
+    margin-bottom: 15px;
+}
+
+.about-text .btn {
+    display: inline-block; 
+    margin-top: 18px;
+}
+
+.doctor {
+    display: flex;
+    gap: 40px;
+    padding: 50px;
+    align-items: center;
+    background: #f5f7f6;
+    flex-wrap: wrap;
+}
+
+.doctor img {
+    width: 100%;
+    height: 400px;
+    max-width: 300px;
+    border-radius: 20px;
+}
+
+.doctor-details {
+    flex: 1;
+}
+
+.doctor-details h2 {
+    color: #2f5d50;
+    margin-bottom: 10px;
+}
+
+.doctor-details h3 {
+    margin-bottom: 15px;
+    font-weight: 400;
+    color: #555;
+}
+
+.doctor-details p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.doctor-details h4 {
+    margin-bottom: 10px;
+}
+
+.doctor-details ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.services {
+    padding: 50px;
+}
+
+.services h2 {
+    margin-bottom: 40px; 
+    color: #2f5d50; 
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    flex: 1;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover; 
+    border-radius: 10px;
+}
+
+.about-checkup {
+    display: flex;
+    gap: 50px;
+    padding: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-checkup img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+}
+
+.about-checkup-text {
+    flex: 1;
+}
+
+.about-checkup-text h1 {
+    margin-bottom: 20px;
+    color: #2f5d50;
+}
+
+.about-checkup-text p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.check-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.check-card {
+    flex: 1 1 200px;
+    background: white;
+    border-radius: 15px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.check-card img {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+.check-card h3 {
+    margin-bottom: 10px;
+    color: #2f5d50;
+}
+
+.check-card:hover {
+    transform: translateY(-5px);
+}
+
+.back-btn {
+    margin: 40px;
+}
+
+.contact {
+    padding: 50px;
+    background: #f5f7f6;
+    text-align: center;
+}
+
+.contact h2 {
+    color: #2f5d50;
+    margin-bottom: 30px;
+}
+
+.contact-details p {
+    font-size: 16px;
+    line-height: 2;
+    margin: 10px 0;
+}
+
+.contact-details a {
+    color: #2f5d50;
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 15px 20px;
+        flex-wrap: wrap;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+        margin-top: 10px;
+        gap: 10px;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav .btn {
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .about, .doctor, .services, .contact, .about-checkup {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    .cards, .check-cards {
+        flex-direction: column;
+    }
+
+    .card img, .check-card img {
+        height: auto;
+    }
+}
